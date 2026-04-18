@@ -397,9 +397,6 @@ if st.session_state.son_cikti:
     else:
         st.caption("Hızlı öneri bölümü üretilmedi.")
 
-    with st.expander("Ham model çıktısı"):
-        st.text(st.session_state.son_cikti)
-
     st.divider()
     if st.button("🔁 Yeniden Üret", use_container_width=True):
         if st.session_state.son_payload:
